@@ -1,3 +1,18 @@
+# Docker has specific installation instructions for each operating system.
+# Please refer to the official documentation at https://docker.com/get-started/
+
+# Pull the Node.js Docker image:
+docker pull node:24-alpine
+
+# Create a Node.js container and start a Shell session:
+docker run -it --rm --entrypoint sh node:24-alpine
+
+# Verify the Node.js version:
+node -v # Should print "v24.4.1".
+
+# Verify npm version:
+npm -v # Should print "11.4.2".
+
 ![terminal-logos](https://github.com/microsoft/terminal/assets/91625426/333ddc76-8ab2-4eb4-a8c0-4d7b953b1179)
 
 [![Terminal Build Status](https://dev.azure.com/shine-oss/terminal/_apis/build/status%2FTerminal%20CI?branchName=main)](https://dev.azure.com/shine-oss/terminal/_build/latest?definitionId=1&branchName=main)
